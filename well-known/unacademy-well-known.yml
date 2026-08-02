@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of unacademy.com + api.unacademy.com
+note: No genuine well-known documents found. unacademy.com serves an SPA catch-all
+  that returns 200 with the HTML app shell for unknown paths (verified for /security.txt
+  and /llms.txt, which return the website HTML, not the artifact); /.well-known/*
+  paths return 403. No raw files were saved because no real documents exist.
+hosts:
+- host: https://unacademy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /security.txt
+    status: 200
+    note: SPA catch-all — returns website HTML, not a security.txt; not saved
+  - path: /llms.txt
+    status: 200
+    note: SPA catch-all — returns website HTML, not an llms.txt; not saved
+  - path: /robots.txt
+    status: 200
+- host: https://api.unacademy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403

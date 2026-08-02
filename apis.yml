@@ -1,9 +1,25 @@
 aid: unacademy
 name: Unacademy
-description: 'Unacademy is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: edtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: Unacademy is a Bangalore-based online learning platform — one of India's
+  largest — offering live classes, courses, study material, and test preparation for
+  competitive exams including UPSC Civil Services, IIT JEE, NEET-UG, SSC, CA Foundation,
+  and CSIR UGC NET, delivered through its web platform and dedicated learner, educator,
+  and parent mobile apps. Backed by SoftBank Vision Fund, Unacademy runs a consumer
+  platform on an internal API (api.unacademy.com) but publishes no public developer
+  program, API documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/unacademy/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.uacdn.net/static/dist/c76c2e18c7980818a913f9467c74c567.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +28,53 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Edtech
+- Education
+- Learning
+- Exam Preparation
+- Courses
+- India
 apis: []
+common:
+- type: DomainSecurity
+  url: security/unacademy-domain-security.yml
+- name: Website
+  type: Website
+  url: https://unacademy.com
+- name: Support
+  type: Support
+  url: https://support.unacademy.com/support/home
+- name: Terms of Service
+  type: TermsOfService
+  url: https://unacademy.com/terms
+- name: Privacy Policy
+  type: PrivacyPolicy
+  url: https://unacademy.com/privacy
+- name: Refund Policy
+  type: RefundPolicy
+  url: https://unacademy.com/refund-policy
+- name: Careers
+  type: Careers
+  url: https://unacademy.com/careers
+- name: About
+  type: About
+  url: https://unacademy.com/about
+- name: GitHub Organization
+  type: GitHubOrganization
+  url: https://github.com/Unacademy
+- name: LLMs.txt
+  type: LLMsTxt
+  url: llms/unacademy-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
