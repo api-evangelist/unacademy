@@ -8,6 +8,17 @@ description: Unacademy is a Bangalore-based online learning platform — one of 
   platform on an internal API (api.unacademy.com) but publishes no public developer
   program, API documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/unacademy/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
