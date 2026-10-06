@@ -39,7 +39,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - EdTech
@@ -58,6 +58,8 @@ tags_raw:
 - India
 apis: []
 common:
+- url: https://unacademy.com/blog
+  type: Blog
 - type: DomainSecurity
   url: security/unacademy-domain-security.yml
 - name: Website
